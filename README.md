@@ -1,43 +1,52 @@
-# WhatsApp Songs
-
+WhatsApp Songs
 Transform your WhatsApp chat exports into personalized, AI-generated music.
+Live Demo
+Try the app: https://message-to-music-lab.lovable.app/auth
+How It Works
 
-## The Vision
-Every conversation has emotions, stories, moments - we transform them into soundtrack memories that you can share, gift, or treasure forever.
+Export your WhatsApp chat as .txt file
+Upload to our platform
+AI Analysis extracts emotions, themes, and key moments
+Music Generation creates your personalized song
+Share your unique musical memory
 
-## How It Works
-1. **Export** your WhatsApp chat as .txt file
-2. **Upload** to our platform 
-3. **AI Analysis** extracts emotions, themes, and key moments
-4. **Music Generation** creates your personalized song
-5. **Share** your unique musical memory
+Technical Architecture
+Production Stack
 
-## Current Stack
-- **n8n Cloud** - Workflow orchestration & processing
-- **MusicAPI.ai** - AI music generation engine
-- **Pinecone** - Vector database for semantic analysis
-- **Anthropic Claude** - Advanced chat analysis & emotion detection
+n8n Cloud: Workflow orchestration & processing
+Anthropic Claude: Advanced chat analysis & emotion detection
+Pinecone: Vector database for semantic analysis (3072-dimension)
+MusicAPI.ai: AI music generation engine
+⚛React/Lovable: Modern frontend application
 
-## Project Status
-- Working MVP with end-to-end workflow
-- Validated concept with early user feedback
-- Beta testing planned for August 2025
-- Solving final technical challenges (encryption + performance)
+Workflow Pipeline
+WhatsApp .txt → n8n Parser → Claude AI Analysis → Pinecone Embeddings → MusicAPI.ai → Generated Song
+Current Status
+Completed
 
-## Looking For
+Working MVP with end-to-end workflow
+Validated concept with early user feedback
+Production infrastructure deployed
+Beta testing planned for August 2025
+
+Technical Challenges
+
+Performance optimization for large chat files (5k+ messages cause timeouts)
+Data encryption implementation for GDPR compliance & app store approval
+n8n Cloud workflow optimization for concurrent processing
+
+Looking For
 Technical expertise to solve our final blockers:
-- **Performance optimization** for large chat files (5k+ messages)  
-- **Data encryption** implementation for GDPR compliance
-- **n8n Cloud** workflow optimization
 
-Open to consulting arrangements or deeper partnership with the right person.
+Pinecone performance optimization in n8n workflows
+Data encryption implementation within n8n Cloud constraints
+Beta testing compliance (TestFlight, Google Play requirements)
 
-## Market Opportunity
-- Target: Gen Z & Millennials (2B+ WhatsApp users)
-- Use cases: Gifts, social content, relationship memories
-- Business model: Freemium with premium features
+The Vision
+Every conversation has emotions, stories, moments - we transform them into soundtrack memories that you can share, gift, or treasure forever.
+Contact
+Lando Barbagli
+landobarbagli@gmail.com
+Open to partnerships & technical collaborations
 
-## Contact
-Interested in collaborating? Open an issue or reach out directly!
-
-Built with ❤️ in Italy
+Built with ❤️ for turning digital memories into musical experiences
